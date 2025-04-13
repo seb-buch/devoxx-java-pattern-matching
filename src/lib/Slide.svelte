@@ -10,6 +10,7 @@
 		autoAnimateRestart?: boolean | null;
 		backgroundImage?: string | null;
 		backgroundSize?: 'cover' | null;
+		leftMargin?: string;
 		children: Snippet;
 	}
 
@@ -21,17 +22,28 @@
 		autoAnimateRestart = null,
 		autoAnimateID = null,
 		backgroundImage = null,
-		backgroundSize = 'cover'
+		backgroundSize = 'cover',
+		leftMargin = '0px'
 	}: Props = $props();
 
 </script>
 <style>
-    section {
-        height: 100%;
-    }
+  section {
+    --left-margin: 200px;
+    height: 100%;
+
+  }
+
+  div {
+    padding-left: var(--left-margin);
+    width: calc(100% - var(--left-margin));
+  }
 </style>
-<section data-transition="{transitionStyle}" data-transition-speed="{transitionSpeed}" data-auto-animate={autoAnimate}
+<section data-transition="{transitionStyle}" data-transition-speed="{transitionSpeed}"
+				 data-auto-animate={autoAnimate}
 				 data-auto-animate-id="{autoAnimateID}" data-auto-animate-restart={autoAnimateRestart}
 				 data-background-image={backgroundImage} data-background-size={backgroundSize}>
-	{@render children()}
+	<div style="width: calc(100% - {leftMargin}); padding-left: {leftMargin};">
+		{@render children()}
+	</div>
 </section>

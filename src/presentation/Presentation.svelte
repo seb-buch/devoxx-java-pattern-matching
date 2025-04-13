@@ -1,11 +1,17 @@
 <script lang="ts">
+	import Title from './Title.svelte';
+	import PatternMatchingWhat from './PatternMatchingWhat.svelte';
+	import PatternMatchingJava from './PatternMatchingJava.svelte';
+	import PatternMatchingExampleGreeter from './PatternMatchingExampleGreeter.svelte';
+	import Conclusion from './Conclusion.svelte';
+	import Thanks from './Thanks.svelte';
 	import './assets/styles.css';
-	import ExampleTitle from './ExampleTitle.svelte';
+	import '@catppuccin/highlightjs/css/catppuccin-macchiato.css';
 </script>
 
-<svelte:head>
-	<title>My presentation title
-	</title>
-</svelte:head>
-
-<ExampleTitle />
+<Title />
+<PatternMatchingWhat />
+<PatternMatchingJava />
+<PatternMatchingExampleGreeter />
+<Conclusion />
+<Thanks />
