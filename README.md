@@ -3,6 +3,9 @@
 Bienvenue sur ce repo qui contient le code des diapositives de ma présentation sur le *pattern
 matching* avec Java 21+.
 
+> [!NOTE]
+> La présentation est formatée pour être visualisée au format 16:9.
+
 ## Je veux voir la présentation
 
 La présentation est disponible en
@@ -22,6 +25,3 @@ Pour servir la présentation en mode développement, il faut:
    pnpm run dev
    ```
 4. Lancer l'adresse suivante dans un navigateur: [http://localhost:5173/](http://localhost:5173/)
-
-> [!NOTE]
-> La présentation est formatée pour être visualisée au format 16:9.
