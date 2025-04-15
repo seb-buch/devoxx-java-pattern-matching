@@ -21,7 +21,7 @@
 	<VerticalSpacer height="2em;" />
 	<p>
 		Le <em>pattern matching</em> (filtrage par motif) est une fonctionnalité permettant
-		<b>d'extraire</b> des informations d'un objet en vérifiant sa <b>structure ou son type</b>.
+		de <b>vérifier</b> une <b>structure de données</b> et d'en <b>extraire</b> son contenu.
 	</p>
 
 	<p class="arrow fragment" data-fragment-index="1">&darr;</p>
@@ -30,6 +30,7 @@
 	</p>
 	<ul>
 		<li class="fragment">contient des <b>structures de données</b>...</li>
-		<li class="fragment">... pouvant être <b>extraites</b> à l'aide d'une syntaxe dédiée</li>
+		<li class="fragment">... pouvant être <b>vérifier/extraites</b> à l'aide d'une syntaxe dédiée
+		</li>
 	</ul>
 </Slide>
